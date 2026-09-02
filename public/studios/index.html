@@ -1197,6 +1197,129 @@
       color: #25d0d0
     }
 
+    /* card 6 */
+    .c6 .wc-bg {
+      background: linear-gradient(135deg, #180808 0%, #3a0d0d 50%, #0c0303 100%)
+    }
+
+    .c6 .wc-bg-txt {
+      color: #ff3b30
+    }
+
+    /* ONGOING PROJECTS STYLING */
+    .live-dot-pulse {
+      width: 8px;
+      height: 8px;
+      background-color: var(--red);
+      border-radius: 50%;
+      display: inline-block;
+      box-shadow: 0 0 10px var(--red);
+      animation: livePulse 2s infinite;
+    }
+
+    @keyframes livePulse {
+      0% { transform: scale(0.95); opacity: 1; }
+      50% { transform: scale(1.3); opacity: 0.5; }
+      100% { transform: scale(0.95); opacity: 1; }
+    }
+
+    .ongoing-section {
+      margin-top: 60px;
+      padding: 40px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .ongoing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .ong-card {
+      background: rgba(14, 14, 20, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 32px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .ong-card:hover {
+      border-color: rgba(255, 40, 0, 0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .ong-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .ong-tag {
+      font-size: 10px;
+      font-family: 'Space Mono', monospace;
+      letter-spacing: 0.2em;
+      color: var(--acid);
+      text-transform: uppercase;
+    }
+
+    .ong-title {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 38px;
+      letter-spacing: 0.02em;
+      color: var(--cream);
+      margin-bottom: 6px;
+      line-height: 0.95;
+    }
+
+    .ong-cat {
+      font-size: 10px;
+      font-family: 'Space Mono', monospace;
+      color: var(--red);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .ong-desc {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.9;
+      margin-bottom: 24px;
+    }
+
+    .ong-footer {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .ong-pill {
+      font-size: 9px;
+      font-family: 'Space Mono', monospace;
+      letter-spacing: 0.1em;
+      padding: 4px 10px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--cream);
+      text-transform: uppercase;
+    }
+
+    .ong-status {
+      font-size: 9px;
+      font-family: 'Space Mono', monospace;
+      letter-spacing: 0.1em;
+      padding: 4px 10px;
+      background: rgba(255, 40, 0, 0.12);
+      border: 1px solid rgba(255, 40, 0, 0.3);
+      color: var(--red);
+      text-transform: uppercase;
+      margin-left: auto;
+    }
+
     /* alternating */
     .wc:nth-child(even) .wc-inner {
       direction: rtl
@@ -2659,6 +2782,83 @@
           </div>
         </div>
       </article>
+
+      <article class="wc c6 has-photo" data-n="06">
+        <div class="wc-inner">
+          <div class="wc-left">
+            <div>
+              <div class="wc-num">06</div>
+              <div class="wc-cat">Supply Chain &amp; Logistics</div>
+              <h3 class="wc-title">HONDA<br>INVENTORY</h3>
+              <p class="wc-desc">Custom enterprise inventory management platform engineered for Honda distribution networks. Features automated stock auditing, live alerts, dealership telemetry, and streamlined parts workflow management.</p>
+            </div>
+            <a href="contact.html" class="wc-link"
+              aria-label="Inquire about Enterprise Software and Inventory Systems by Noxus Creative">
+              <span>Request System Demo</span><span class="wc-arr">↗</span>
+            </a>
+          </div>
+          <div class="wc-right">
+            <div class="wc-bg">
+              <div class="wc-bg-txt">HONDA</div>
+            </div>
+            <div class="wc-overlay" style="background:linear-gradient(to left,rgba(6,6,10,.5),transparent)"></div>
+            <div class="wc-tags">
+              <span class="wc-tag">Enterprise</span>
+              <span class="wc-tag">Inventory Mgmt</span>
+              <span class="wc-tag">Logistics</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ONGOING PROJECTS -->
+      <div class="ongoing-section">
+        <div style="margin-bottom: 32px;">
+          <span style="font-size: 10px; font-family: 'Space Mono', monospace; letter-spacing: 0.25em; text-transform: uppercase; color: var(--red); display: flex; align-items: center; gap: 10px;">
+            <span class="live-dot-pulse"></span> ACTIVE LABS &amp; BUILDS
+          </span>
+          <h3 style="font-family: 'Bebas Neue', cursive; font-size: clamp(32px, 5vw, 56px); color: var(--cream); letter-spacing: 0.02em; margin-top: 6px; margin-bottom: 8px;">
+            ONGOING PROJECTS
+          </h3>
+          <p style="font-size: 13px; color: var(--muted); max-width: 540px; line-height: 1.8;">
+            Active digital builds, brand identities, and software platforms currently in production at Noxus Creative.
+          </p>
+        </div>
+
+        <div class="ongoing-grid">
+          <!-- REVO CAFE -->
+          <div class="ong-card">
+            <div class="ong-head">
+              <span class="ong-tag">[ IN DEVELOPMENT ]</span>
+              <span class="live-dot-pulse"></span>
+            </div>
+            <h4 class="ong-title">REVO CAFE</h4>
+            <div class="ong-cat">Hospitality &amp; Brand Experience</div>
+            <p class="ong-desc">Craft coffee digital ecosystem, interactive menu experience, and bespoke visual identity engineered for high-engagement hospitality.</p>
+            <div class="ong-footer">
+              <span class="ong-pill">Brand System</span>
+              <span class="ong-pill">Web Application</span>
+              <span class="ong-status">In Production</span>
+            </div>
+          </div>
+
+          <!-- RED JEWELS -->
+          <div class="ong-card">
+            <div class="ong-head">
+              <span class="ong-tag">[ IN DEVELOPMENT ]</span>
+              <span class="live-dot-pulse"></span>
+            </div>
+            <h4 class="ong-title">RED JEWELS</h4>
+            <div class="ong-cat">Luxury E-Commerce &amp; Fine Retail</div>
+            <p class="ong-desc">High-end luxury jewelry digital showroom and custom e-commerce portal designed for high-value collections and personalized clientele.</p>
+            <div class="ong-footer">
+              <span class="ong-pill">E-Commerce</span>
+              <span class="ong-pill">Luxury UI/UX</span>
+              <span class="ong-status">UI/UX Phase</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- MARQUEE 2 -->
@@ -2698,7 +2898,7 @@
           <p class="about-p" data-reveal>From healthcare clinics to luxury hotels, live music acts to wedding photographers — we engineer bespoke web development, custom software solutions, AI integration, and UI/UX design tailored to your core business objectives.</p>
           <div class="about-kv" data-reveal>
             <div><span class="kv-n" style="color:var(--red)">100%</span><span class="kv-l">Custom Code</span></div>
-            <div><span class="kv-n" style="color:var(--acid)">5+</span><span class="kv-l">Industries</span></div>
+            <div><span class="kv-n" style="color:var(--acid)">6+</span><span class="kv-l">Industries</span></div>
             <div><span class="kv-n" style="color:var(--cream)">∞</span><span class="kv-l">Iterations</span></div>
           </div>
         </div>
@@ -2819,9 +3019,9 @@
     <section id="stats" aria-label="Noxus Creative Performance &amp; Impact Statistics">
       <h2 class="sr-only">Noxus Creative Impact &amp; Metrics</h2>
       <div class="stats-g">
-        <div class="st" data-reveal><span class="st-n" id="projectsCount" data-target="5">5</span><span
+        <div class="st" data-reveal><span class="st-n" id="projectsCount" data-target="6">6</span><span
             class="st-l">Projects Completed</span></div>
-        <div class="st" data-reveal><span class="st-n" id="industriesCount" data-target="5">5</span><span
+        <div class="st" data-reveal><span class="st-n" id="industriesCount" data-target="6">6</span><span
             class="st-l">Industries Served</span></div>
         <div class="st" data-reveal><span class="st-n" data-target="100">100</span><span class="st-l">% Client
             Satisfaction</span></div>

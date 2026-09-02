@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowUpRight, Menu, X } from "lucide-react";
+import { ArrowUpRight, X } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
